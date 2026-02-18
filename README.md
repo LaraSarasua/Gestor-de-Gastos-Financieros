@@ -49,18 +49,18 @@ responsabilidades.
 
 # 📦 Modelo de Datos
 
-## Expense
+## 🧾 Expense
 
-  Campo           Tipo                Descripción
-  
-  id              Long                Identificador único
-  description     String              Descripción del gasto
-  amount          BigDecimal          Monto del gasto
-  category        CategoryEnum        Categoría
-  paymentMethod   PaymentMethodEnum   Método de pago
-  date            LocalDate           Fecha del gasto
-  createdAt       LocalDateTime       Fecha de creación
-  updatedAt       LocalDateTime       Fecha de actualización
+| Campo         | Tipo              | Descripción                     |
+|--------------|------------------|---------------------------------|
+| id           | Long             | Identificador único             |
+| description  | String           | Descripción del gasto           |
+| amount       | BigDecimal       | Monto del gasto                 |
+| category     | CategoryEnum     | Categoría del gasto             |
+| paymentMethod| PaymentMethodEnum| Método de pago                  |
+| date         | LocalDate        | Fecha del gasto                 |
+| createdAt    | LocalDateTime    | Fecha de creación               |
+| updatedAt    | LocalDateTime    | Fecha de última actualización   |
 
 ------------------------------------------------------------------------
 
