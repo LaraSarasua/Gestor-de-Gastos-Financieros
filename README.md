@@ -5,10 +5,15 @@
 Gestor de Gastos es una API REST desarrollada con Spring Boot que
 permite administrar gastos personales.
 
-La aplicación permite: - Crear gastos - Editarlos - Eliminarlos -
-Filtrarlos por categoría - Filtrarlos por método de pago - Filtrarlos
-por rango de fechas - Generar reportes financieros - Obtener resumen del
-mes actual
+La aplicación permite: 
+- Crear gastos
+- Editarlos
+- Eliminarlos 
+- Filtrarlos por categoría
+- Filtrarlos por método de pago
+- Filtrarlos por rango de fechas
+- Generar reportes financieros
+- Obtener resumen del mes actual
 
 Proyecto desarrollado como práctica profesional backend utilizando
 buenas prácticas y arquitectura en capas.
@@ -47,7 +52,7 @@ responsabilidades.
 ## Expense
 
   Campo           Tipo                Descripción
-  --------------- ------------------- ------------------------
+  
   id              Long                Identificador único
   description     String              Descripción del gasto
   amount          BigDecimal          Monto del gasto
