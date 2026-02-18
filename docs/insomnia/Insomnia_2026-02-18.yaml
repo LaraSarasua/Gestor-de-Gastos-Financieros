@@ -1,0 +1,299 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Coleccion
+meta:
+  id: wrk_012e1c58998940508bda03b8a01ac134
+  created: 1771452246654
+  modified: 1771452246654
+  description: ""
+collection:
+  - url: http://localhost:8080/api/expenses
+    name: Crear Expensa
+    meta:
+      id: req_5ac353f111a64dca81b05c693896c907
+      created: 1771452273692
+      modified: 1771454126933
+      isPrivate: false
+      description: ""
+      sortKey: -1771452273692
+    method: POST
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "description": "donacion refugio gatitos",
+          "amount":  20,
+          "category": "OTHER",
+          "paymentMethod": "BANK_TRANSFER",
+          "date": "2026-02-16"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/expenses
+    name: Traer todas las expensas
+    meta:
+      id: req_aeb1439678a843af8acde97e9c0fa749
+      created: 1771452555528
+      modified: 1771452571439
+      isPrivate: false
+      description: ""
+      sortKey: -1770382294213
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/expenses/1
+    name: Traer expensa por ID
+    meta:
+      id: req_158894a3381e43e1b8e22369883bdd5f
+      created: 1771452757482
+      modified: 1771452779597
+      isPrivate: false
+      description: ""
+      sortKey: -1769847304473.5
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/expenses/1
+    name: Actualizar
+    meta:
+      id: req_cd08555b653148fc8dcd6fe31b9d6c56
+      created: 1771452829415
+      modified: 1771452847619
+      isPrivate: false
+      description: ""
+      sortKey: -1769579809603.75
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |
+        {
+          "description": "Supermercado Coto",
+          "amount": 2000,
+          "category": "FOOD",
+          "paymentMethod": "DEBIT_CARD",
+          "date": "2026-02-18"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/expenses/1
+    name: DELETE
+    meta:
+      id: req_54f245e66df04681bdbdbcb5a4d43923
+      created: 1771452891245
+      modified: 1771452899324
+      isPrivate: false
+      description: ""
+      sortKey: -1769446062168.875
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/expenses/reports/by-category
+    name: Reporte Por Categoria
+    meta:
+      id: req_8c596c6ee5b0466da2e37b5abf6fdf5f
+      created: 1771452954845
+      modified: 1771454513406
+      isPrivate: false
+      description: ""
+      sortKey: -1769713557038.625
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/expenses/category/ENTERTAINMENT
+    name: Filtrar por categoria
+    meta:
+      id: req_b54af967bd65405baf092d35588ba493
+      created: 1771453581727
+      modified: 1771453893703
+      isPrivate: false
+      description: ""
+      sortKey: -1771453581727
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/expenses/payment-method/DEBIT_CARD
+    name: Filtrar por método de pago
+    meta:
+      id: req_ff4983a6db1548518732807cb29c1a24
+      created: 1771453664188
+      modified: 1771453677829
+      isPrivate: false
+      description: ""
+      sortKey: -1771452927709.5
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/expenses/between?startDate=2026-02-01&endDate=2026-02-28
+    name: Filtrar por fechas
+    meta:
+      id: req_9ce0fd45d0774dbb8cb20eec4ee22f3e
+      created: 1771453728137
+      modified: 1771453730831
+      isPrivate: false
+      description: ""
+      sortKey: -1771452600700.75
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/expenses/reports/by-category
+    name: Filtrar por categoria
+    meta:
+      id: req_ee802991f88c451dbe42b71f3fcbbdcd
+      created: 1771453779560
+      modified: 1771453782626
+      isPrivate: false
+      description: ""
+      sortKey: -1771452437196.375
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:8080/api/expenses/reports/current-month
+    name: Reporte de mes actual
+    meta:
+      id: req_d985a11e99f84c27ab7176c3654d7bee
+      created: 1771454560952
+      modified: 1771454583203
+      isPrivate: false
+      description: ""
+      sortKey: -1771454560952
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.3.1
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_315a90500c98fd4a40dcc1edeaf79785ebe1a44d
+    created: 1771452246661
+    modified: 1771452246661
+environments:
+  name: Base Environment
+  meta:
+    id: env_315a90500c98fd4a40dcc1edeaf79785ebe1a44d
+    created: 1771452246657
+    modified: 1771452246657
+    isPrivate: false
