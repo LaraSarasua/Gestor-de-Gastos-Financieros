@@ -70,8 +70,11 @@ responsabilidades.
 
 FOOD\
 TRANSPORT\
+SHOPPING\
 ENTERTAINMENT\
 HEALTH\
+EDUCATION\
+UTILITIES\
 OTHER
 
 ## PaymentMethodEnum
@@ -79,7 +82,8 @@ OTHER
 CASH\
 CREDIT_CARD\
 DEBIT_CARD\
-TRANSFER
+BANK_TRANSFER\
+DIGITAL_WALLET
 
 ------------------------------------------------------------------------
 
@@ -90,7 +94,7 @@ TRANSFER
 git clone https://github.com/tu-usuario/gestor-de-gastos.git\
 cd gestor-de-gastos
 
-## 2️⃣ Crear base de datos
+## 2️⃣ Crear base de datos (opcional ya que al correr te crea la base de datos automaticamente)
 
 CREATE DATABASE gestor_de_gastos;
 
